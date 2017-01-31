@@ -20,7 +20,7 @@
 
 
   // clean the data
-  for (var i = 0; i < schools.length - 1; i++) {
+  for (var i = 0; i < schools.length; i++) {
     // If we have '19104 - 1234', splitting and taking the first (0th) element
     // as an integer should yield a zip in the format above
     if (typeof schools[i].ZIPCODE === 'string') {

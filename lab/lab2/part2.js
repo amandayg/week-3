@@ -18,3 +18,24 @@ _.each(myArray, function(value, key, list) {
   console.log(value, key, list);
 });
 ===================== */
+//#1
+var newObject = {
+  "foo":"bar",
+  "food":"Something else"
+};
+var valueAtKey =_.each(newObject,
+  function(value){
+    console.log(value);
+});
+
+//#2
+function filterOutLessThan10 (list) {
+  list2 =[];
+  _.each(list, function(num){
+    if (num > 10){
+      list2.push(num);
+    }
+  });
+  return (list2);
+}
+filterOutLessThan10([4,11]);
